@@ -1,0 +1,5 @@
+- hosts: all
+  tasks:
+    - name: Print instance information
+      debug:
+        msg: "{{ ansible_host }} | {{ ansible_hostname }}"
